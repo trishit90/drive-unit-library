@@ -12,7 +12,7 @@ The repository carries the whole path from parts to motion: design files, bill o
 2. Print the parts using the settings in [cad/README.md](cad/README.md).
 3. Build the mechanism with [docs/ASSEMBLY_GUIDE.md](docs/ASSEMBLY_GUIDE.md).
 4. Wire and bring up the controller with [Guide 0](docs/guides/Guide_0_Bench_Bringup.md), then follow the [Quick Start](docs/guides/Quick_Start_Guide.md): generate the configuration with the Calculator, build and flash Marlin, connect, and home.
-5. Use the Operator for routine motion. Further guides cover [endstops](docs/guides/Guide_1_Endstops.md), [multi-axis machines](docs/guides/Guide_2_MultiAxis_Machine.md), [sensorless homing](docs/guides/Guide_3_Sensorless_Homing.md) and [dual homing](docs/guides/Guide_Advanced_Dual_Homing.md).
+5. Use the Operator ([Operator Guide](docs/guides/Operator_Guide.md)) for routine motion. Further guides cover [endstops](docs/guides/Guide_1_Endstops.md), [multi-axis machines](docs/guides/Guide_2_MultiAxis_Machine.md), [sensorless homing](docs/guides/Guide_3_Sensorless_Homing.md) and [dual homing](docs/guides/Guide_Advanced_Dual_Homing.md).
 
 Versions that belong together are listed in [COMPATIBILITY.md](COMPATIBILITY.md).
 
