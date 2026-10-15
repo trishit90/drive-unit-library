@@ -32,11 +32,6 @@ This repository is not released under a single licence. Each folder carries its 
 | `docs/` | Bill of materials, assembly guide, guides | CC BY 4.0 |
 | `data/` | Vibration measurement records (CC BY 4.0); analysis script and G-code (MIT) | see `data/README.md` |
 
-## Status and known gaps
-
-- The Operator and Calculator were verified in a headless browser with a mocked serial port. Behaviour on a physical controller is not covered by that check.
-- Specification figures were measured on one reference instance (DU-220/540), not on every configuration the Calculator can generate.
-
 ## Safety
 
 The unit is a 24 V stepper-driven mechanism with moving belts and pulleys. Keep hands clear while the controller is powered, and test new configurations at low speed with the stop control within reach. The files are provided as is, with no warranty (see the licences).

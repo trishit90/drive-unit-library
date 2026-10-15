@@ -1,4 +1,4 @@
-# data
+# Data
 
 `vibration_data.zip` holds the end-effector vibration records and analysis code for the Chapter 7 case study (a reconstructed three-axis gantry compared with the published baseline gantry). The archive is released unmodified. Its own README, inside the zip at `ch7_vibration/README.md`, lists the records and gives the commands that reproduce the published values.
 

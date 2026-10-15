@@ -6,11 +6,11 @@ The parts referred to below are numbered in this view: (1) structural frame, (2)
 
 ![Exploded view of the drive unit parts, numbered 1 to 8](images/drive-unit-parts.png)
 
-Source and limits. The content is derived from Sections 5.3 to 5.7 of the thesis (draft Chapters 1 to 7, v1). The thesis states the parts, fits and adjustments below. It does not publish torque values, belt-tension figures or a numeric running-fit criterion, so none are given here. The ordered 123-operation list used for the thesis operation count is held in the thesis appendix and is not reproduced in this file. The order of steps below follows the thesis description (frame first, modules after) and has not been timed or re-checked against a fresh build.
+Fits and adjustments are set by feel on the assembled unit: no torque values, belt-tension figures or numeric running-fit criterion are specified. Assemble the frame first and the modules after.
 
 ## Tools
 
-Hex keys (button-head internal-hex screws are used throughout, apart from one M6 external-hex screw), a drill and a tap for the blind-joint features, and the appropriate drill for any printed hole that needs a controlled diameter. For stock preparation the thesis used a drop saw for the extrusion, scissors for the main belt and an angle grinder for the shaft. The exact drill and tap sizes are not stated in the thesis.
+Hex keys (button-head internal-hex screws are used throughout, apart from one M6 external-hex screw), a drill and a tap for the blind-joint features, and the appropriate drill for any printed hole that needs a controlled diameter. For stock preparation use a drop saw for the extrusion, scissors for the main belt and an angle grinder for the shaft.
 
 ## 1. Prepare the stock
 
@@ -60,7 +60,7 @@ Where required, fit the two identical printed adapters, one on the carriage as t
 
 ## 10. Check before powering
 
-Rotate the transmission by hand through the full travel. The carriage should move along the rails without binding, and the belts should seat on their pulleys without rubbing a flange. Re-check the eccentric preload, the reduction-belt tension and the main-belt tension. The thesis does not give numeric acceptance values for these, so judge them by feel and by the first-motion checks in the Quick Start.
+Rotate the transmission by hand through the full travel. The carriage should move along the rails without binding, and the belts should seat on their pulleys without rubbing a flange. Re-check the eccentric preload, the reduction-belt tension and the main-belt tension. There are no numeric acceptance values for these; judge them by feel and by the first-motion checks in the Quick Start.
 
 Then wire the motor, endstop and 24 V supply and work through [`guides/Guide_0_Bench_Bringup.md`](guides/Guide_0_Bench_Bringup.md) and [`guides/Quick_Start_Guide.md`](guides/Quick_Start_Guide.md).
 

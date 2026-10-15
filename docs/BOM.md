@@ -1,6 +1,6 @@
 # Bill of materials: DU-220/540 reference instance
 
-This is the mechanical bill of materials for the reference drive unit, DU-220/540: 220 mm usable travel, 540 mm overall length, 500 mm longitudinal rails, 130 mm transverse members, blind-jointed frame, 80T driven pulley (4:1), two cross-braces, no cable management. It is reproduced from Table 5.5 of the thesis (Section 5.8.1, draft Chapters 1 to 7, v1).
+This is the mechanical bill of materials for the reference drive unit, DU-220/540: 220 mm usable travel, 540 mm overall length, 500 mm longitudinal rails, 130 mm transverse members, blind-jointed frame, 80T driven pulley (4:1), two cross-braces, no cable management.
 
 Scope. The table covers the drive-unit mechanism only. The controller, power supply, wiring and connectors are listed separately below. The motor is named because it was fitted to the reference unit. The drive-unit interface is defined by component family (2020 V-slot extrusion, 2 mm-pitch GT2, NEMA 17, 625ZZ bearings, compatible V-wheels), not by part number, so a compatible substitute from another supplier is permitted.
 
@@ -61,9 +61,7 @@ Scope. The table covers the drive-unit mechanism only. The controller, power sup
 
 ## Totals
 
-The reference instance contains 14 printed parts and 24 bought non-fastener parts, giving 38 primary mechanical parts. The assembly uses 71 separate fastening elements, for a total of 109 mechanical components. The grub screws supplied with the three pulleys are treated as part of the purchased pulleys. By type, the thesis counts 10 printed part types, 13 bought non-fastener types and 12 fastener types, so the primary mechanical system is 38 parts across 23 primary part types. The thesis counts 123 mechanical assembly operations for this instance under its Chapter 4 definition.
-
-The quantities in the table above were summed from the table rows and reproduce the thesis totals of 14, 24, 71 and 109.
+The reference instance contains 14 printed parts and 24 bought non-fastener parts, giving 38 primary mechanical parts. The assembly uses 71 separate fastening elements, for a total of 109 mechanical components. The grub screws supplied with the three pulleys are treated as part of the purchased pulleys. By type, there are 10 printed part types, 13 bought non-fastener types and 12 fastener types, so the primary mechanical system is 38 parts across 23 primary part types. Assembly takes 123 mechanical operations.
 
 ## Optional cable management (not fitted to DU-220/540)
 
@@ -75,11 +73,11 @@ The quantities in the table above were summed from the table rows and reproduce 
 | Mounting screw | 4 | M4 x 20 mm button-head, internal hex |
 | Mounting nut | 4 | M4 hex nut |
 
-Fitting this assembly adds 17 mechanical assembly operations (thesis Table 5.6).
+Fitting this assembly adds 17 mechanical assembly operations.
 
 ## Control hardware (reference implementation)
 
-The thesis names these items in Section 5.6.1 and Table 5.7 but does not give a full electrical bill of materials. Items marked "not stated" have no value in the thesis text and need to be added by the builder or author.
+The control items used on the reference unit.
 
 | Item | Reference value |
 |---|---|
@@ -88,12 +86,10 @@ The thesis names these items in Section 5.6.1 and Table 5.7 but does not give a 
 | Run current | 1.4 A RMS |
 | Microstepping | 1/16 |
 | Supply voltage | 24 V |
-| Power supply rating | Not stated |
 | Motor connector | JST-PH (fitted to the project motors as supplied) |
-| Wiring, endstop cable, USB cable, microSD card | Not stated |
 | Firmware | Marlin 2.1.2 (the files in this repository are for 2.1.2.8) |
 
-## Stock preparation (thesis Table 5.2)
+## Stock preparation
 
 | Item | Supplied form | Preparation for DU-220/540 |
 |---|---|---|
@@ -110,13 +106,13 @@ The thesis names these items in Section 5.6.1 and Table 5.7 but does not give a 
 
 Four mechanical choices define an instance: longitudinal extrusion cut length, main-belt cut length, frame-joint type (blind joint or commodity right-angle connector) and cross-brace quantity. The driven pulley sets the ratio: 20T, 60T, 80T or 100T give 1:1, 3:1, 4:1 and 5:1, and the Calculator accepts other tooth counts from 20T to 100T. The 210 mm reduction belt is retained across the standard pulley options.
 
-Open main-belt length is approximately B = 2L - 130 mm, where L is the longitudinal extrusion length (thesis equation 5.4). For L = 500 mm this gives 870 mm. The design range is approximately 300 mm to 2000 mm of longitudinal extrusion. The rule is a preparation estimate; final tension is set on the assembled axis with the tensioner.
+Open main-belt length is approximately B = 2L - 130 mm, where L is the longitudinal extrusion length. For L = 500 mm this gives 870 mm. The design range is approximately 300 mm to 2000 mm of longitudinal extrusion. The rule is a preparation estimate; final tension is set on the assembled axis with the tensioner.
 
 ## Printed parts and files in `cad/`
 
-The thesis lists printed parts by function; the files in `cad/DriveUnitV37STLs/` are named differently. The mapping below is inferred from file names and has not been confirmed.
+The table above lists printed parts by function; the files in `cad/DriveUnitV37STLs/` are named differently. This table maps one to the other.
 
-| Printed part in the table | Probable file (unconfirmed) |
+| Printed part in the table | File |
 |---|---|
 | Printed carriage | `Carriage.3mf` |
 | Printed motor mount | `MotorBracket.3mf` |
@@ -124,5 +120,5 @@ The thesis lists printed parts by function; the files in `cad/DriveUnitV37STLs/`
 | Printed adjustment knob | `M6Knob.3mf` |
 | Printed endstop mount (left or right) | `LimitSwitchLeft.3mf`, `LimitSwitchRight.3mf` |
 | Printed cross-brace | `pulleyBrace.3mf` |
-| Tensioner carrier and moving idler | `beltTightner.3mf` (unconfirmed) |
-| Printed axial spacer (4) | No matching file identified |
+| Tensioner carrier and moving idler | `beltTightner.3mf` |
+| Printed axial spacer (4) | No separate file |

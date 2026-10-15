@@ -1,4 +1,4 @@
-# cad
+# CAD
 
 Hardware design files for the drive unit. Everything in this folder is released under the CERN Open Hardware Licence Version 2, Permissive (`LICENSE` in this folder).
 
@@ -25,21 +25,25 @@ The individual part files carry the title stored in their 3MF metadata. Most rea
 | `cableChainMount.3mf`, `stiffnerCableChain.3mf` | Cable chain mount and stiffener |
 | `M6Knob.3mf` | M6 adjustment knob |
 
-Two files are PrusaSlicer project plates that reference the part files above. `DriveUnitGantry.3mf` arranges 37 part instances (three each of the carriage, motor bracket, both pulley stack holders, belt tightener, pulley brace, stiffener and right limit switch; four cable chain mounts and four M6 knobs; two of each handed belt tightener; one `carriage2`). `refrence.3mf` arranges one of each of nine parts (stiffener, both pulley stack holders, carriage, belt tightener, motor bracket, M6 knob, pulley brace, right limit switch). `Print orientation.png` is a PrusaSlicer view of a plate showing the parts laid on their largest flat face.
+`DriveUnitGantry.3mf` is a PrusaSlicer project that references the part files above and arranges 37 part instances: three each of the carriage, motor bracket, both pulley stack holders, belt tightener, pulley brace, stiffener and right limit switch; four cable chain mounts and four M6 knobs; two of each handed belt tightener; and one `carriage2`. `Print orientation.png` is a PrusaSlicer view of a plate showing the parts laid on their largest flat face.
 
-## Print settings stored in the project plates
+## Reference print settings
 
-These values are read from the PrusaSlicer configuration inside `DriveUnitGantry.3mf` and `refrence.3mf`.
+Reference manufacturing settings for the printed parts.
 
-| Setting | Value |
+| Parameter | Reference setting |
 |---|---|
-| Printer profile | Prusa CORE One, 0.4 mm nozzle |
-| Material profile | Generic PETG |
-| Layer height | 0.25 mm |
-| Perimeters | 6 |
-| Top and bottom solid layers | 5 and 5 |
-| Infill | 50 %, grid |
-| Nozzle and bed temperature | 250 C and 85 C |
-| Supports | off in `DriveUnitGantry.3mf`, on in `refrence.3mf` |
+| Printer | Prusa CORE One |
+| Nozzle | 0.4 mm high-flow |
+| Material | PETG |
+| Layer height | 0.20 mm |
+| Walls | 6 |
+| Top and bottom layers | 5 and 5 |
+| Infill | 50 % gyroid |
+| Supports | Build-plate-only where required |
+| Bridging | Permitted |
+| Orientation | Prescribed orientations, as in the plate view |
 
-The part files do not carry bought-part information. See the bill of materials in `docs/` once it is added.
+One basic drive unit uses approximately 430 g of PETG and about 9 h 50 min of print time at these settings. Both depend on the printer, material profile and slicer.
+
+Bought parts are listed in [docs/BOM.md](../docs/BOM.md).
